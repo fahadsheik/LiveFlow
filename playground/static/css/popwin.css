@@ -1,0 +1,67 @@
+html {
+    background-color:#193718;
+}
+h1{
+    color: #b7aaaa;
+}
+.popup{
+    width: 420px;
+    padding: 20px 40px;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    top: 50%;
+    background-color: #357131;
+    border-radius: 8px;
+    font-family: “Poppins”,sans-serif;
+    text-align: center;
+}
+p{
+    color: rgb(62, 109, 68);
+}
+#close{
+    display: block;
+    text-decoration: none;
+    margin:  0px 2px 80px auto;
+    background-color: transparent;
+    font-size: 30px;
+    color: #9f8989;
+    border-radius: 100%;
+    padding:1px;
+    width: 40px;
+    height: 40px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+#uploadbtn{
+    background-color: #193718;
+    color: rgb(161, 173, 186);
+    height: 30px;
+    width: 170px;
+    font-size: large;
+    padding: 2px;
+    margin: 0px;
+}
+h1 {
+    margin-top: 20px;
+    margin-bottom: 60px;
+}
+#filename{
+    background-color: rgb(31, 39, 31);
+    color: #ffffff;
+    margin: 0px;
+    height:20px;
+    width: 280px;
+    font-size:small;
+    padding-bottom: 1px;
+}
+#file-upload-button{
+    background: blue;
+    height: 30px;
+    font-size:larger;
+}
+#indiv{
+    display: flex;
+    gap: 10vw;
+}

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script
+      src="https://kit.fontawesome.com/231448ed02.js"
+      crossorigin="anonymous"
+    ></script>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    {% load static %}
+    <link rel="stylesheet" href="{%static 'css/online.css'%}"/>
+    <title>LiveFlow</title>
+</head>
+<body>
+  <div id="header">
+    <img src="{%static 'logo1.png'%}" width=170px height=60px>
+    <div id="search-container">
+
+      <form id="frm" method="get">
+        <input type="text" name="q" id="search-input" placeholder="Search..." />
+          <!-- <div class="smalldiv">
+            <i class="fa fa-search" aria-hidden="true"></i>
+          </div>
+        </div> -->
+        <input type="submit" value="Search" class="search-button" />
+      </form>
+      </div>
+    <a href="http://127.0.0.1:8000/playground/online/popwin.html" class="link-box">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/d/d9/Add-video-camera-666917.png" alt="Homepage" width="39px" height="35px">
+    </a>
+
+
+  </div>
+
+  <div class="categories-row">
+    <ul class="categories-list">
+      <li class="category" id="animationBtn"><a href="animation.html" style="color: rgb(255, 255, 255);" class="my-link">Animation</a></li>
+      <li class="category" id="dramaBtn"><a href="drama.html" style="color: rgb(255, 255, 255);" class="my-link">Drama</a></li>
+      <li class="category" id="musicBtn"><a href="music.html" style="color: rgb(255, 255, 255);" class="my-link">Music</a></li>
+      <li class="category" id="cinemaBtn"><a href="cinema.html" style="color: rgb(255, 255, 255);" class="my-link">Cinema</a></li>
+    </ul>
+  </div>
+  
+
+
+
+    <div class="video-container">
+      <div class="video-box">
+        <video src="{%static 'thor.mp4'%}" controls></video>
+        <p class="video-caption">Thor</p>
+      </div>
+      <div class="video-box">
+        <video src="{%static 'batman.mp4'%}" controls></video>
+        <p class="video-caption">Batman</p>
+      </div>
+      <div class="video-box">
+        <video src="{%static 'ironman.mp4'%}" controls></video>
+        <p class="video-caption">Ironman</p>
+      </div>
+      <div class="video-box">
+        <video src="{%static 'flash.mp4'%}" controls></video>
+        <p class="video-caption">Flash</p>
+      </div>
+      <div class="video-box">
+        <video src="{%static 'justiceleague.mp4'%}" controls></video>
+        <p class="video-caption">Justice League</p>
+      </div>
+      <div class="video-box">
+        <video src="{%static 'superman.mp4'%}" controls></video>
+        <p class="video-caption">Superman</p>
+      </div>
+      <div class="video-box">
+          <video src="{%static 'wonderwoman.mp4'%}" controls></video>
+          <p class="video-caption">Wonder Woman</p>
+      </div>
+      <div class="video-box">
+        <video src="{%static 'captain.mp4'%}" controls></video>
+        <p class="video-caption">Captain America</p>
+      </div>
+      <div class="video-box">
+        <video src="{%static 'avengers.mp4'%}" controls></video>
+        <p class="video-caption">Avengers</p>
+      </div>
+    </div>
+    {% load static %}
+    <script src="{% static 'test.js' %}">
+    </script>
+    <script src="{% static 'test1.js' %}">
+    </script>
+
+</body>
+</html>

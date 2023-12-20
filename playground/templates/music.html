@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script
+      src="https://kit.fontawesome.com/231448ed02.js"
+      crossorigin="anonymous"
+    ></script>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    {% load static %}
+    <link rel="stylesheet" href="{%static 'css/online.css'%}" />
+    <title>LiveFlow</title>
+</head>
+<body>
+  <div id="header">
+    <img src="{%static 'logo1.png'%}" width=170px height=60px>
+    <div class="search-container">
+      <form id="frm" method="get">
+        <input type="text" name="q" id="search-input" placeholder="Search..." />
+        <input type="submit" value="Search" class="search-button" />
+      </form>
+
+    </div>
+    <button id="start-stream-btn"><img src="https://upload.wikimedia.org/wikipedia/commons/d/d9/Add-video-camera-666917.png" width="39px" height="35px"></button>
+  </div>
+    <div class="video-container">
+      <div class="video-box">
+        <video src="{%static 'thor.mp4'%}" controls></video>
+        <p class="video-caption">Thor</p>
+      </div>
+      <div class="video-box">
+        <video src="{%static 'captain.mp4'%}" controls></video>
+        <p class="video-caption">Captain America</p>
+      </div>
+    </div>
+  {% load static %}
+<script src="{% static 'test.js' %}">
+</script>
+</body>
+</html>
